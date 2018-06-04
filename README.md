@@ -1,6 +1,6 @@
 # Personal Portfolio | Minhaz Alam
 
-![alt text](assets/img/portfolio.png "Personal Portfolio | Minhaz Alam")
+<a href="http://Zahnim77.github.io/ordinarycoder/" target="_blank">![alt text](assets/img/portfolio.png "Personal Portfolio | Minhaz Alam")</a>
 
 ## Third Party Sources - Technologies
 
