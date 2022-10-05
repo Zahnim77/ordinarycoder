@@ -6,6 +6,52 @@ $(document).ready(function() {
         $(this).text('CONTACT ME');
     });
 
+    // Word Flick
+    var words = ['Hi,', 'My Name is', 'MD. Minhaz Alam', 'I can create website as you need.', 'This is my'],
+        part,
+        i = 0,
+        offset = 0,
+        len = words.length,
+        forwards = true,
+        skip_count = 0,
+        skip_delay = 15,
+        speed = 70;
+    var wordflick = function () {
+        setInterval(function () {
+            if (forwards) {
+                if (offset >= words[i].length) {
+                    ++skip_count;
+                    if (skip_count == skip_delay) {
+                        forwards = false;
+                        skip_count = 0;
+                    }
+                }
+            }
+            else {
+                if (offset == 0) {
+                    forwards = true;
+                    i++;
+                    offset = 0;
+                    if (i >= len) {
+                        i = 0;
+                    }
+                }
+            }
+            part = words[i].substr(0, offset);
+            if (skip_count == 0) {
+                if (forwards) {
+                    offset++;
+                }
+                else {
+                    offset--;
+                }
+            }
+            $('.word').text(part);
+        }, speed);
+    };
+
+    wordflick();
+
     /* Data for Zing Chart - chartSkills in Skills Section */
     ZC.LICENSE = ['7b185ca19b4be2cba68fdcd369c663a9'];
 
@@ -26,7 +72,7 @@ $(document).ready(function() {
             alphaArea: '.6',
         },
         scaleK: {
-            labels: ['HTML & CSS', 'WordPress', 'JavaScript', 'Java', 'Laravel', 'MySQL', 'PHP'],
+            labels: ['PHP', 'Laravel', 'WordPress', 'MySQL', 'React', 'Vue', 'Caspio'],
             item: {
                 fontColor: white,
                 rules: [{
@@ -54,7 +100,7 @@ $(document).ready(function() {
             }
         },
         series: [{
-            values: [75, 80, 75, 70, 60, 75, 70],
+            values: [75, 80, 65, 85, 60, 75, 80],
             backgroundColor: lightRed,
             lineColor: lightRed,
             legendItem: {

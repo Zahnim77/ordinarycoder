@@ -19,12 +19,17 @@
     <link rel="stylesheet" href="assets/css/jquery.pagepiling.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/jquery.funnyText.css" />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css">
 
     <!-- JS: JQuery and Page Piling -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.pagepiling.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.funnyText.js"></script>
 
-    <!-- Page Piling -->
+    <!-- Page Piling & Funny-Text-->
     <script type="text/javascript">
         $(document).ready(function() {
             $('#pagepiling').pagepiling({
@@ -37,6 +42,13 @@
                 loopTop: true,
                 loopBottom: true
             });
+
+            $('.display-4').funnyText({
+                speed: 300,
+                activeColor: 'white',
+                color: 'black',
+                direction: 'horizontal'
+            });
         });
     </script>
 </head>
@@ -45,10 +57,16 @@
     <div id="pagepiling">
         <!-- Home Section -->
         <div class="section text-center" id="home">
-            <img src="assets/img/photo.jpg" class="rounded-circle img-fluid" alt="Minhaz Alam" width="300">
-            <h1 class="display-4">Hi, I'm <b>Minhaz Alam</b></h1>
-            <h3>Web Developer</h3>
-            <p>Mixed with hint of tweaking, love to surf through codes.</p>
+            <!-- <img src="assets/img/photo.jpg" class="rounded img-fluid" alt="Minhaz Alam" width="100"> -->
+            <h1 class="display-4">Welcome!</h1>
+            <section class="word"></section>
+            <br /><br /><br />
+            <!-- <div></div> -->
+            <div class="portfolio">
+                <h3><b>Personal_Portfolio</b></h3>
+                <h3><b>Personal_Portfolio</b></h3>
+            </div>
+            <p>Mixed with hint of puzzling, love to dive deep into codes.</p>
             <a href="#contact">
                 <button class="btn-wide" id="btnContact">CONTACT ME</button>
             </a>
@@ -74,20 +92,20 @@
         <!-- Skills Section -->
         <div class="section container-fluid" id="skills">
             <div class="row">
-                <div class="col-12 col-lg" id="skills-left">
+                <div class="col-12 col-md" id="skills-left">
                     <h1>Skills and Experience</h1>
-                    <p>I'm a Web Developer mainly focused on <b>PHP</b>. I use Bootstrap & React for Front End, and MySQL, Caspio & PHP for Back End Development. As of now, I have developed 
-                        <b>4 Professional Projects</b> and various academic projects.
+                    <p>I'm a Web Developer in profession. I'm comfortable with <b>PHP-Laravel, MySQL & Caspio</b> for backend development and I use <b>Bootstrap, Vue & React</b> at frontend. 
+                        So far, I developed various types of professional projects for clients. Some of the projects I have worked on are not showcased due to company policy. 
+                        What is here is just to give an idea of my work.
                     </p>
-                    <p>Wanting to improve my skills, I am currently learning more about Laravel &amp; React.</p>
                     <div class="skills-item">
                         <div class="skills-item-head lead">
                             Languages
                         </div>
                         <div class="skills-item-body">
-                            <p>Most experienced with SQL, HTML, CSS, JavaScript, PHP</p>
-                            <p>Some experience with Caspio</p>
-                            <p>Dabbled on Xcode and Objective-C.</p>
+                            <p>Most experienced with PHP, Laravel, MySQL</p>
+                            <p>Some experience with Caspio, WordPress and API integration</p>
+                            <p>Dabbled on Vue.js and React.js</p>
                         </div>
                     </div>
                     <div class="skills-item">
@@ -95,20 +113,19 @@
                             Technologies
                         </div>
                         <div class="skills-item-body">
-                            <p>Git, SASS, CSSGrid, Bootstrap 3 &amp; 4, Laravel and jQuery</p>
-                            <p>Others: Familiar with Photoshop, Illustrator and Adobe Experience Design</p>
+                            <p>Git, SaaS, Bootstrap 4/5, jQuery, JSON</p>
+                            <p>Others: Familiar with Illustrator and SketchUp</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg" id="chartSkills">
+                <div class="col-12 col-md" id="chartSkills">
                 </div>
             </div>
         </div>
         <!-- end Skills Section -->
         <!-- Works Section -->
         <div class="section container-fluid" id="works">
-            <h1>WORKS</h1>
-            <p>Professional Projects I've built using PHP, Caspio &amp; Laravel.</p>
+            <h1>WORK SAMPLE</h1>
             <div class="row">
                 <div class="col">
                     <figure>
@@ -148,7 +165,7 @@
                 </div>
                 <div class="col">
                     <figure>
-                        <img alt="laravel 6.0" src="assets/img/ddms.png">
+                        <img alt="laravel" src="assets/img/ddms.png">
                         <figcaption>
                             <h3>Job Portal</h3>
                             <p>It's a complete jobsite built-in laravel where Users can build up their profile to apply for jobs, Companies can post new job, view applicants who applied to their jobs. Admin has full privilege to create new and customize existing functionalities.</p>
@@ -208,16 +225,16 @@
                     </form>
                 </div>
                 <div class="col-xs-12 col-sm text-center" id="contact-right">
-                    <img src="assets/img/avatar.jpg" class="rounded-circle img-fluid" alt="Minhaz Alam" height="100" width="100">
+                    <img src="assets/img/avatar.jpg" class="rounded-circle img-fluid image" alt="Minhaz Alam" height="100" width="100">
                     <h2><b>Minhaz</b> Alam</h2>
                     <p>Full-stack Web Developer</p>
                     <p>
-                        I'm 30 years old and currently living in <b>Dhaka, Bangladesh.</b>
-                        <br>A  <b>CS</b> enthusiast likes to build cool web applications.
+                        I'm 31 years old and currently living in <b>Dhaka, Bangladesh.</b>
+                        <br>A  <b>CS</b> enthusiast, who likes to build web applications.
                     </p>
                     <p>
                         In my free time, you can either find me working on my personal projects
-                        <br> learning web technologies, reading books or playing POKER.
+                        <br> learning web technologies, reading books or watching football.
                     </p>
                     <div class="social-media-buttons">
 		                <a target='_blank' href="https://github.com/Zahnim77">
@@ -244,10 +261,13 @@
     <div id="rotate"></div>
 
     <!-- JavaScripts -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"
+        integrity="sha512-2rNj2KJ+D8s1ceNasTIex6z4HWyOnEYLVC3FigGOmyQCZc2eBXKgOxQmo3oKLHyfcj53uz4QMsRCWNbLd32Q1g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdn.zingchart.com/zingchart.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 </body>
 
 </html>
