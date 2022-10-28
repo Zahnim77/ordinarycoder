@@ -27,7 +27,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery.pagepiling.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery.funnyText.js"></script>
 
     <!-- Page Piling & Funny-Text-->
     <script type="text/javascript">
@@ -43,12 +42,12 @@
                 loopBottom: true
             });
 
-            $('.display-4').funnyText({
-                speed: 300,
-                activeColor: 'white',
-                color: 'black',
-                direction: 'horizontal'
-            });
+            // $('.display-4').funnyText({
+            //     speed: 300,
+            //     activeColor: 'white',
+            //     color: 'black',
+            //     direction: 'horizontal'
+            // });
         });
     </script>
 </head>
@@ -58,8 +57,16 @@
         <!-- Home Section -->
         <div class="section text-center" id="home">
             <!-- <img src="assets/img/photo.jpg" class="rounded img-fluid" alt="Minhaz Alam" width="100"> -->
-            <h1 class="display-4">Welcome!</h1>
-            <section class="word"></section>
+            <h1 class="display-4">
+                <span style="--i:1">W</span>
+                <span style="--i:2">e</span>
+                <span style="--i:3">l</span>
+                <span style="--i:4">c</span>
+                <span style="--i:5">o</span>
+                <span style="--i:6">m</span>
+                <span style="--i:7">e</span>
+            </h1>
+            <div class="word"></div>
             <br /><br /><br />
             <!-- <div></div> -->
             <div class="portfolio">
