@@ -86,11 +86,11 @@ button:hover {
 /* Home Section
  * --------------------------------------- */
 
-/* #home .img-fluid {
+#home .img-fluid {
     position: fixed;
-    top: 0;
+    bottom: 0;
     right: 0;
- } */
+ }
 .portfolio {
     display: flex;
     padding-left: 10cm;
@@ -304,7 +304,11 @@ figcaption a:hover {
     box-shadow: none;
     color: #fff;
 }
-
+#contact .certificate {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
 
 /* Overwriting Page Piling.js
 * --------------------------------------- */
