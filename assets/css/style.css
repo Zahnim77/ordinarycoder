@@ -1,6 +1,6 @@
 /* Home Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 /* Table of Contents:
     Home Section
     Skills Section
@@ -93,50 +93,40 @@ button:hover {
  }
 .portfolio {
     display: flex;
-    padding-left: 10cm;
+    padding-left: 15cm;
     align-items: center;
     justify-content: center;
     position: relative;
  }
 .portfolio h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 2.5em;
+    font-family: "Bungee Spice", sans-serif;
+    font-size: 3em;
     position: absolute; 
     transform: translate(-50%, -50%);
 }
-.portfolio h3:nth-child(1) {
-    color: transparent;
-    -webkit-text-stroke: 4px #e84855;
-}
-.portfolio h3:nth-child(2) {
-    color: #e84855;
-    animation: animate 2s ease-in-out infinite;
-}
-@keyframes animate {
 
-    0%,
-    100% {
-        clip-path: polygon(0% 45%,
-                16% 44%,
-                33% 50%,
-                54% 60%,
-                70% 61%,
-                84% 59%,
-                100% 52%,
-                100% 100%,
-                0% 100%);
-    }
+.animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(-225deg,
+            #231557 0%,
+            #3333cc 29%,
+            #ff1361 67%,
+            #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 190px;
+}
 
-    50% {
-        clip-path: polygon(0% 60%,
-                15% 65%,
-                34% 66%,
-                51% 62%,
-                67% 50%,
-                84% 45%,
-                100% 46%,
-                100% 100%,
-                0% 100%);
+@keyframes textclip {
+    to {
+        background-position: 200% center;
     }
 }
 
