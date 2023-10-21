@@ -72,7 +72,7 @@ $(document).ready(function() {
             alphaArea: '.6',
         },
         scaleK: {
-            labels: ['PHP', 'Laravel', 'WordPress', 'MySQL', 'React', 'Vue', 'Caspio'],
+            labels: ['PHP', 'MySQL', 'WordPress', 'JavaScript', 'Laravel', 'Vue', 'Caspio'],
             item: {
                 fontColor: white,
                 rules: [{
@@ -100,7 +100,7 @@ $(document).ready(function() {
             }
         },
         series: [{
-            values: [75, 80, 65, 85, 60, 75, 80],
+            values: [75, 80, 60, 85, 65, 70, 90],
             backgroundColor: lightRed,
             lineColor: lightRed,
             legendItem: {
