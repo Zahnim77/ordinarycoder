@@ -87,9 +87,9 @@ button:hover {
  * --------------------------------------- */
 
 .cert {
-    position: relative;
-    bottom: -58%;
-    right: -48%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
  }
 .title-word {
     animation: color-animation 5s linear infinite;
@@ -313,10 +313,10 @@ figcaption a:hover {
     box-shadow: none;
     color: #fff;
 }
-#contact .certificate {
+.certificate {
     position: fixed;
-    bottom: 0;
-    right: 0;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* Overwriting Page Piling.js
