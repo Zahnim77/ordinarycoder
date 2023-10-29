@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     // Word Flick
-    var words = ['Hi', 'My Name is', 'MD Minhaz Alam', 'I can create website as you need', 'This is my'],
+    var words = ['Hi', 'Welcome to my personal portfolio', 'I am a web developer in profession', 'I can develop websites as per requirements', 'Hire me to solve issues in your websites'],
         part,
         i = 0,
         offset = 0,
