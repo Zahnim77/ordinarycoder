@@ -7,7 +7,7 @@ $(document).ready(function() {
     });
 
     // Word Flick
-    var words = ['Hi', 'Welcome to my personal portfolio', 'I provide web development and IT support services', 'I develop websites and troubleshoot issues to ensure smooth operation of IT systems'],
+    var words = ['Hi', 'Welcome to my personal portfolio', 'I provide web development and IT support services', 'I develop websites and troubleshoot issues to ensure smooth IT operation'],
         part,
         i = 0,
         offset = 0,
