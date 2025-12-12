@@ -186,7 +186,7 @@ button:hover {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/pf-bkgrnd1.jpg);
+    background-image: url(../img/background.jpg);
     overflow: hidden;
     background-color: #202020;
     background-blend-mode: soft-light;
